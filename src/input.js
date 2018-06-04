@@ -25,7 +25,7 @@ export default class InputField extends Component {
             bodyInput: event.target.value
           })
         }}/>
-        <button>Submit</button>
+        <button onClick={this.props.createIdea}>Submit</button>
       </div>
     )
   }
