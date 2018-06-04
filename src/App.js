@@ -8,18 +8,26 @@ import Idea from './Idea.js';
 class App extends Component {
   constructor() {
     super()
+    this.createIdea = this.createIdea.bind(this);
   }
 
   createIdea() {
-    
+    console.log('here');
+    // return (
+    //   <Idea title={titleInput} body={bodyInput} />
+
+    // )
   }
+
   render() {
     return (
       <div className="App">
         <h1>IdeaBox</h1>
-        <Input />
-        <Search />
-        <IdeaContainer />
+        <Input createIdea={this.createIdea}/>
+        <Search/>
+        <IdeaContainer>
+
+        </IdeaContainer>
       </div>
     );
   }
