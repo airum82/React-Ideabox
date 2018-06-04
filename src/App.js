@@ -6,6 +6,13 @@ import IdeaContainer from './IdeaContainer.js';
 import Idea from './Idea.js';
 
 class App extends Component {
+  constructor() {
+    super()
+  }
+
+  createIdea() {
+    
+  }
   render() {
     return (
       <div className="App">
