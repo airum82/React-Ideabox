@@ -1,9 +1,12 @@
 import React from 'react';
+import Idea from './Idea.js';
 
-export default const IdeaContainer = props => {
+const IdeaContainer = props => {
   return (
     <div className="IdeaContainer">
 
     </div>
   )
 }
+
+export default IdeaContainer

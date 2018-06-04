@@ -12,8 +12,8 @@ export default class Idea extends Component {
   render() {
     return (
       <div className="idea">
-        <h2>{props.title}</h2>
-        <p>{props.body}</p>
+        <h2>{this.props.title}</h2>
+        <p>{this.props.body}</p>
         <button>Upvote</button>
         <button>Downvote</button>
         <button>Delete</button>

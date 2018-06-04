@@ -12,8 +12,19 @@ export default class InputField extends Component {
   render() {
     return (
       <div className="ideaInput">
-        <input type="text" placeholder="title" />
-        <input type="text" placeholder="body" />
+        <input type="text" 
+          placeholder="title" 
+          onChange={(event) => {
+            this.setState({
+              titleInput: event.target.value
+            })
+          }
+        }/>
+        <input type="text" placeholder="body" onChange={(event) => {
+          this.setState({
+            bodyInput: event.target.value
+          })
+        }}/>
         <button>Submit</button>
       </div>
     )
