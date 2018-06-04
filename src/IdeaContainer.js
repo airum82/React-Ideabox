@@ -4,7 +4,7 @@ import Idea from './Idea.js';
 const IdeaContainer = props => {
   return (
     <div className="IdeaContainer">
-
+      {props.children}
     </div>
   )
 }
